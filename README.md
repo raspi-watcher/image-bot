@@ -1,5 +1,7 @@
 # image-bot
 
-image-bot is a chat bot built on the [Hubot][hubot] framework.
+image-bot is a chat bot built on the [Hubot](http://hubot.github.com) framework.
 
-[hubot]: http://hubot.github.com
+## dependencies
+
+* [slackcat](https://github.com/rlister/slackcat)
