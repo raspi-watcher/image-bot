@@ -1,4 +1,5 @@
 [
   "watch",
-  "sudo"
+  "sudo",
+  "date"
 ]
