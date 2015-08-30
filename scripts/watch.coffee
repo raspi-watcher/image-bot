@@ -26,8 +26,8 @@ module.exports = (robot) ->
     motion_stop_cmd = [ 'service', 'motion', 'stop' ]
     motion_start_cmd = [ 'service', 'motion', 'start' ]
 
-    raspistill_cmd = "raspistill -o '" + file_path + "'"
-    slackcat_cmd = "slackcat -c camera '" + file_path + "'"
+    raspistill_cmd = "raspistill -w 324 -h 243 -vf -hf -o '" + file_path + "'"
+    slackcat_cmd = "slackcat -c camera -t jpg -n " + file_name + " -m '" + file_path + "'"
 
     motion_stop_child_process = sudo motion_stop_cmd, options
     motion_stop_child_process.stdout.on 'data', (data) ->
